@@ -1,0 +1,3 @@
+select u.Name, u.Age, s.value
+from Users u, Salary s
+where u.age > 18 and s.value > 50000
