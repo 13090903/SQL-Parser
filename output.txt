@@ -1,0 +1,35 @@
+├ SELECT
+├— Attribute
+│  ├ Table u
+│  └ AttributeName Name
+├— Attribute
+│  ├ Table u
+│  └ AttributeName Age
+├— Attribute
+│  ├ Table s
+│  └ AttributeName value
+├— FROM
+│  └ Table
+│    ├ TableName Users
+│    └ TableAliasName u
+│  └ Table
+│    ├ TableName Salary
+│    └ TableAliasName s
+├— WHERE
+│  └ Expression
+│    └ ExpressionPart
+│      └ Attribute
+│      │ ├ TableAliasName u
+│      │ └ AttributeName age
+│      └ OPERATOR
+│      │ └ >
+│      └ CONST
+│        └ 18
+│    └ ExpressionPart
+│      └ Attribute
+│      │ ├ TableAliasName s
+│      │ └ AttributeName value
+│      └ OPERATOR
+│      │ └ >
+│      └ CONST
+│        └ 50000

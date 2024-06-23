@@ -20,6 +20,12 @@ public class Main {
         System.out.println("\n---------------------------------------");
 //        System.out.println(prettyFormat(rst));
         outputAST(rst, "output.txt");
+        System.out.println("\n---------------------------------------");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        File f = new File("output.txt");
+        BufferedReader fin = new BufferedReader(new FileReader(f));
+        String line;
+        while ((line = fin.readLine()) != null) System.out.println(line);
     }
 
     public static String prettyFormat(String input, int indent) {
